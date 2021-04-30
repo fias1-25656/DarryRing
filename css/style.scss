@@ -1,0 +1,165 @@
+.content{width:1000px; margin:0 auto;}
+
+/* ---------------header---------------- */
+.logo{float:left;padding-left:17px;}
+.login{padding:0 15px 0 22px;}
+.register{background:#d9b39b; padding:0 10px;}
+.register:hover{background:#c67c59;}
+.tel{margin:0 25px 0 18px; padding-left:21px; background:url(../img/same/telleft.png) left no-repeat;}
+
+.header{
+	padding:30px 0 18px; height:120px;
+	.header_right{
+		float: right;width:580px;
+		.header_up{width:580px;line-height:20px; padding-bottom:64px;
+			div{float:left;color:#8d8d8d;
+				a{color:#8d8d8d;}
+				.register{color: #FFFFFF;}
+			}
+			.app{
+				position:relative;
+				span{padding:4px 15px;background:url(../img/same/mobile.png) left no-repeat;}
+				span.hover{color:#c77f5c;background:url(../img/same/mobile_hover.png) left no-repeat;}
+				dl{position:absolute; z-index:9; left:-70px; display:none; text-align:center; padding: 28px 24px; background:#fff;border-right:1px solid #eee; border-bottom:1px solid #eee;
+					dt{padding:0 16px 20px;}
+					dd{font-size:16px; line-height:20px; color:#000;}
+				}
+			}
+			.language{float: left; position:relative;padding:0 13px 0 12px;background:url(../img/same/bottom.png) right no-repeat;
+				li{display:none; position:absolute;
+					a{color:#8d8d8d;}
+					a:hover{color:#000;}
+				}
+				.lang1{display:block;position:relative;}
+				.lang3{top:40px}
+			}
+			.stores{float: right;position:relative;
+				.storeAll{padding:5px 12px 10px; margin-top:-5px;border:1px solid #fff;border-bottom:none; position:relative; z-index:2; background:#fff;}
+				.storeAll.hover{border-color:#c77f5c;}
+				.location{display:none; z-index:1; width:278px; line-height:26px; border:1px solid #c77f5c; position:absolute; top:30px; right:0; background:#fff; z-index:1;
+					a{padding: 7px 13px 0;}
+					a:hover{color:#c77f5c;}
+				}
+			}
+		}
+		.header_down{width:368px;float: right; position:relative;
+			.check_msg{display:none; position:absolute;top:-37px; z-index:3; width:326px; padding:8px 12px 16px; line-height:20px; background:url(../img/same/yzts_word.png) no-repeat;}
+			img{margin:0 18px 8px 5px;}
+			.area{float: left;line-height:26px;
+				span{display:inline-block; width:48px; text-align:right; padding-right:14px; background:url(../img/same/bottom.png) right no-repeat;}
+				ul{ display:none;position:absolute;
+					li{height:26px;}
+				}
+			}
+			input{height:24px; width:193px; margin:0 10px 0 5px; padding-left:5px; border:1px solid #d7d7d7;}
+			button{height:26px; padding:0 7px; border:1px solid #000; background:none;}
+		}
+	}
+}
+
+/* ---------------nav---------------- */
+.nav{
+	height:60px; background:url(../img/same/nav_rp.jpg);
+	ul{
+		li{float: left; position:relative; text-align:center;
+			a{color:#fff; display:block;width:130px; height:60px; font:16px/60px "微软雅黑";}
+			a:hover{color:#D9C8AB;}
+		}
+	}
+}
+
+/* ---------------sub_nav---------------- */
+.sub_nav{
+    display: none; position: fixed; width: 50px; height: 617px; background: #DBC7BA; right: 33px; bottom:2px; text-align: center;
+    p{display: none;}
+    
+    .server_online{width: 58px; height: 97px; margin-left: -4px; background: #D9B39B; margin-bottom: 50px;
+        a{display:block; width: 100%; height: 100%;}
+        span{color: #FFFFFF; display: block; width: 24px; margin: 0 auto;}
+        em{display: block; width: 4px; height: 4px; margin-bottom: 0;}
+        .ic_left{ background: url(../img/same/icon_yleft.png); float: left;}
+        .ic_right{ background: url(../img/same/icon_yright.png); float: right;}
+    }
+    
+    .quick_sort{
+        height: 30px; width: 30px; padding:10px; margin-bottom: 18px;
+        a{display: block; width: 30px; height: 30px; background: url(../img/same/icon_servie.png) no-repeat;}
+    
+        @for $i from 1 through 6 {
+            .sort#{$i} {background-position: left (-$i)*30px;}
+            .sort#{$i}.hover{background-position: right (-$i)*30px;}
+        }
+    }
+    .quick_sort.hover{background: #FFFFFF;}
+    
+    .toTop{
+        a{display: block; width: 50px; height: 50px; background: url(../img/same/totop.jpg) no-repeat;}
+        a:hover{background-position: right top;}
+    }
+    
+    .share{display: none;}
+}
+
+
+/* ---------------promise---------------- */
+.promise{background:url(../img/same/footer_rp.jpg) repeat-x; overflow:hidden;
+	dl{float:left;text-align:center; margin:64px 41px 30px;
+		i{display:block; width:60px; height:60px; background:url(../img/same/icon_footer.png);}
+		dd{margin-top:18px; color:#666666;}
+	}
+	
+	@for $i from 1 through  7 {
+		.pic#{$i} {
+			i{background-position:($i - 1) * 60px 0;}
+			a:hover i{background-position:($i - 1) * 60px -60px;}
+		}
+	}
+
+}
+
+/* ---------------service---------------- */
+.service{height:40px; padding:25px 0; background:#e9e9e9;
+    ul{float: left;}
+	li{float: left; position: relative; height:40px; margin-right:60px; padding-left:45px; background:url(../img/same/coin_left.png) no-repeat;font:20px/40px "微软雅黑";}
+	a{color:#797979;}
+	.hotline{
+	   float: right;
+	   p{color:#797979; margin-bottom:6px;}
+	}
+	
+	.share{ top:39px; left:0; background: #e9e9e9; padding-top: 25px;  height: 180px;}
+}
+
+.share{
+    display:none;position: absolute;width: 180px;text-align: center;
+	a{background:url(../img/same/ico-shares.png) no-repeat; display: inline-block; width: 30px; height: 30px; margin-top: 3px; margin-left: -5px;}
+	@for $i from 1 through  4 {
+        .icon#{$i} {
+           background-position:- ($i - 1)*30px 0;
+        }
+        .icon#{$i}:hover{background-position:- ($i - 1)*30px -68px;}
+    }
+    .icon5{background-position: 0 -32px;}
+    .icon5:hover{background-position: 0 -100px;}
+}
+
+.footer{
+    height: 242px; background: #797979;text-align: center; padding:56px 0;
+    h3,p,a{color: #cdcdcd;}
+    h3{font-weight: bold;}
+    ul{
+        overflow: hidden; font-size:14px; line-height: 22px;
+        li{
+            float: left;
+            width: 162px;
+            border-left:1px solid #959292;
+        }
+        .noborder{border: none;}
+    }
+    
+    .copyright{
+        margin-top: 60px; line-height: 18px;
+        a{font-weight: bold; font-size: 14px; margin-top: 20px;}
+    }
+    
+}
