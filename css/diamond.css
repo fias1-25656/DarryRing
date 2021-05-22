@@ -36,3 +36,10 @@ body { background: #f6efef; }
 .goods .goodslist li { float: left; margin: 10px 18px 20px 0; }
 .goods .goodslist dl { width: 320px; height: 460px; text-align: center; background: #FFFFFF; }
 .goods .goodslist img { width: 320px; height: 320px; }
+.goods .goodslist .price { font-size: 14px; font-weight: bold; color: #797979; }
+.goods .goodslist dd { margin-bottom: 10px; }
+.goods .goodslist dd a { width: 100px; height: 20px; text-align: center; line-height: 20px; margin: 0 4px; }
+.goods .goodslist dd .collect { border: 1px solid #dbc7ba; color: #dbc7ba; }
+.goods .goodslist dd .buynow { background: #dbc7ba; color: #FFFFFF; }
+.goods .goodslist dd .sell { border-right: 1px solid #d2d2d2; padding: 0 5px 0 8px; margin-right: 5px; }
+.goods .goodslist dd .comment { padding: 0 5px 0 8px; color: #c67c59; }
