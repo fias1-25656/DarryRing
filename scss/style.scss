@@ -60,10 +60,65 @@
 /* ---------------nav---------------- */
 .nav{
 	height:60px; background:url(../img/same/nav_rp.jpg);
-	ul{
-		li{float: left; position:relative; text-align:center;
-			a{color:#fff; display:block;width:130px; height:60px; font:16px/60px "微软雅黑";}
-			a:hover{color:#D9C8AB;}
+	.nav_list{ position:relative; height: 60px; line-height: 60px;
+		li{float: left; text-align: center;
+			.menu{color:#fff; display:inline-block; width:130px; height:60px; font:16px/60px "微软雅黑";}
+			.menu:hover{color:#D9C8AB;}
+			
+			.dr_subnav{position: absolute; display: none; width: 1000px; background: #FFFFFF; height: 260px; left: 0; top: 60px; z-index: 999;
+			     .fl{ float: left; height: 230px; text-align: center; }
+			     .sub_left{ width: 498px; padding-top: 30px; background: url(../img/same/subNav_line.png) right center no-repeat;}
+			     .sub_right{ width: 498px; padding-top: 30px;}
+			     a{color: #5E5E61;}
+			     a:hover{color: #C57D5C;}
+			     
+			     p{font-size: 14px; color: #5E5E61; line-height: 24px; margin-top: 6px;}
+			     .tojoin{margin-top:26px; 
+			         a{background: url(../img/same/black_icon.png) right center no-repeat; display: inline-block; height: 29px; padding-right: 40px;}
+			     }
+			     
+			     .typelist{
+			         width: 200px; margin: 0 20px;
+			         a{display: block; border-bottom: 1px solid #DBDBDB; line-height: 40px;}
+			         a:hover{border-color: #AFAFB0;}
+			     }
+			     
+			     .imglist{
+			         margin: 0 20px;
+			         a{display: none;}
+			         img{width: 200px; height: 200px;}
+			     }
+			     
+			     .drstore_hot{
+			         h3{width: 290px;margin: 0 auto; font-size: 14px; line-height: 40px; font-weight: bold; border-bottom: 1px solid #BBBBBB; color: #d49e85;
+			             span{display: inline-block; border-bottom: 2px solid #d49e85; margin-bottom: -1px;}
+			         }
+			         p{
+			             a{display: inline-block; font-size: 12px; color: #d49e85; width: 50px;}
+			             a:hover{color: #C57D5C; font-size: 13px;}
+			         }
+			        
+			     }
+			     
+			     .storelist{ position: relative;
+			         li{float: none; display: none; position: absolute; left: 0; right: 0; top:0; bottom: 0;}
+			     }
+			     .drstore_tab{
+			         width: 320px; height: 56px; margin: 0 auto; margin-top: 15px; position: relative; border-bottom: 1px solid #BBBBBB;
+			         li{float: left; width: 64px; margin-left: 0; font-size: 12px; text-align: center; color: #797979;}
+			         li.drstore_tabhover{font-weight: bold; color: #d49e85; font-size: 12px;
+			             .store_name{display: block}
+			         }
+			         
+			         .store_name{position: absolute; display: none; text-align: center; width: 320px; margin: 0 auto; left: 60px; left: 0; 
+			             span{display: inline-block; font-size: 12px; font-weight: normal; width: 50px; margin: 0;}
+			         }
+			     }
+			     
+			     #curLine{position: absolute; width: 38px; left: 89px; top: 172px; border-bottom: 1px solid #BBBBBB; height: 0;
+			         img{right: 0; top: -5px; position: absolute;}
+			     }
+			}
 		}
 	}
 }

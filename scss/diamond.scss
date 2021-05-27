@@ -53,6 +53,7 @@ body{background: #f6efef;}
     .goodslist{
         overflow: hidden;
         li{float: left; margin: 10px 18px 20px 0;}
+        .right{float: right; margin-right: 0;}
         dl{width: 320px; height: 460px; text-align: center; background: #FFFFFF;}
         img{width: 320px; height: 320px;}
         .price{font-size: 14px; font-weight: bold; color: #797979;}

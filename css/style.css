@@ -48,9 +48,39 @@
 
 /* ---------------nav---------------- */
 .nav { height: 60px; background: url(../img/same/nav_rp.jpg); }
-.nav ul li { float: left; position: relative; text-align: center; }
-.nav ul li a { color: #fff; display: block; width: 130px; height: 60px; font: 16px/60px "微软雅黑"; }
-.nav ul li a:hover { color: #D9C8AB; }
+.nav .nav_list { position: relative; height: 60px; line-height: 60px; }
+.nav .nav_list li { float: left; text-align: center; }
+.nav .nav_list li .menu { color: #fff; display: inline-block; width: 130px; height: 60px; font: 16px/60px "微软雅黑"; }
+.nav .nav_list li .menu:hover { color: #D9C8AB; }
+.nav .nav_list li .dr_subnav { position: absolute; display: none; width: 1000px; background: #FFFFFF; height: 260px; left: 0; top: 60px; z-index: 999; }
+.nav .nav_list li .dr_subnav .fl { float: left; height: 230px; text-align: center; }
+.nav .nav_list li .dr_subnav .sub_left { width: 498px; padding-top: 30px; background: url(../img/same/subNav_line.png) right center no-repeat; }
+.nav .nav_list li .dr_subnav .sub_right { width: 498px; padding-top: 30px; }
+.nav .nav_list li .dr_subnav a { color: #5E5E61; }
+.nav .nav_list li .dr_subnav a:hover { color: #C57D5C; }
+.nav .nav_list li .dr_subnav p { font-size: 14px; color: #5E5E61; line-height: 24px; margin-top: 6px; }
+.nav .nav_list li .dr_subnav .tojoin { margin-top: 26px; }
+.nav .nav_list li .dr_subnav .tojoin a { background: url(../img/same/black_icon.png) right center no-repeat; display: inline-block; height: 29px; padding-right: 40px; }
+.nav .nav_list li .dr_subnav .typelist { width: 200px; margin: 0 20px; }
+.nav .nav_list li .dr_subnav .typelist a { display: block; border-bottom: 1px solid #DBDBDB; line-height: 40px; }
+.nav .nav_list li .dr_subnav .typelist a:hover { border-color: #AFAFB0; }
+.nav .nav_list li .dr_subnav .imglist { margin: 0 20px; }
+.nav .nav_list li .dr_subnav .imglist a { display: none; }
+.nav .nav_list li .dr_subnav .imglist img { width: 200px; height: 200px; }
+.nav .nav_list li .dr_subnav .drstore_hot h3 { width: 290px; margin: 0 auto; font-size: 14px; line-height: 40px; font-weight: bold; border-bottom: 1px solid #BBBBBB; color: #d49e85; }
+.nav .nav_list li .dr_subnav .drstore_hot h3 span { display: inline-block; border-bottom: 2px solid #d49e85; margin-bottom: -1px; }
+.nav .nav_list li .dr_subnav .drstore_hot p a { display: inline-block; font-size: 12px; color: #d49e85; width: 50px; }
+.nav .nav_list li .dr_subnav .drstore_hot p a:hover { color: #C57D5C; font-size: 13px; }
+.nav .nav_list li .dr_subnav .storelist { position: relative; }
+.nav .nav_list li .dr_subnav .storelist li { float: none; display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+.nav .nav_list li .dr_subnav .drstore_tab { width: 320px; height: 56px; margin: 0 auto; margin-top: 15px; position: relative; border-bottom: 1px solid #BBBBBB; }
+.nav .nav_list li .dr_subnav .drstore_tab li { float: left; width: 64px; margin-left: 0; font-size: 12px; text-align: center; color: #797979; }
+.nav .nav_list li .dr_subnav .drstore_tab li.drstore_tabhover { font-weight: bold; color: #d49e85; font-size: 12px; }
+.nav .nav_list li .dr_subnav .drstore_tab li.drstore_tabhover .store_name { display: block; }
+.nav .nav_list li .dr_subnav .drstore_tab .store_name { position: absolute; display: none; text-align: center; width: 320px; margin: 0 auto; left: 60px; left: 0; }
+.nav .nav_list li .dr_subnav .drstore_tab .store_name span { display: inline-block; font-size: 12px; font-weight: normal; width: 50px; margin: 0; }
+.nav .nav_list li .dr_subnav #curLine { position: absolute; width: 38px; left: 89px; top: 172px; border-bottom: 1px solid #BBBBBB; height: 0; }
+.nav .nav_list li .dr_subnav #curLine img { right: 0; top: -5px; position: absolute; }
 
 /* ---------------sub_nav---------------- */
 .sub_nav { display: none; position: fixed; width: 50px; height: 617px; background: #DBC7BA; right: 33px; bottom: 2px; text-align: center; }
