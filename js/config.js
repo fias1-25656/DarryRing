@@ -1,6 +1,7 @@
 require.config({
 	paths : {
-		"jquery" : "script/jquery-1.11.0"	
+		"jquery" : "jquery/jquery-1.11.3",
+		"jquery.ui" : "jquery/jquery-ui"
 	}	
 });
 

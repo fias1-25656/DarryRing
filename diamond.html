@@ -5,10 +5,12 @@
 	<title>DarryRing</title>
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	 <link rel="stylesheet" href="css/diamond.css"/> 
+	<link rel="stylesheet" href="css/diamond.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
 </head>
 <script data-main = "js/config.js" src="js/require.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/plug/all.js" type="text/javascript" charset="utf-8"></script>
+<script src="dist/js/plugin/plug.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/plug/diamond.js" type="text/javascript" charset="utf-8"></script>
 <body>
 	<div class="header">
 		<div class="content">
@@ -308,7 +310,7 @@
 		</div>
 		<div class="quick_sort">
 			<a href="#" class="sort1"></a>
-			<p>购物车</p>
+			<p>购物车<span></span></p>
 		</div>
 		<div class="quick_sort">
 			<a href="#" class="sort2"></a>
@@ -407,25 +409,15 @@
 				<li class="dr_sort"><a href="###">按人气</a></li>
 				<li class="dr_sort"><a href="###">按销量</a></li>
 				<li class="dr_sort"><a href="###">按价格</a></li>
-				<li class="page">
-					<span>共263件</span>商品<span>1/22</span>
-					<a href="###" class="pagepre"><i></i></a>
-					<a href="###" class="pagenext"><i></i></a>
+				<li class="page" id="count">
+					<span>共 <b id="totalgoods"></b> 件</span>商品<span> &nbsp;<b id="nowpage"></b>/<b id="totalpage"></b></span>
+					<a href="javascript:void(0)" class="pagepre" id="pagepre"><i></i></a>
+					<a href="javascript:void(0)" class="pagenext" id="pagenext"><i></i></a>
 				</li>
 			</ul>
 			
-			<ul class="goodslist">
-				<li>
-					<dl>
-						<dt><a href="detail.html"><img src="img/userfiles/image/Product/201409031259093e45b5ecf0.jpg"/></a></dt>
-						<dd class="price">￥11399</dd>
-						<dd class="type"><span>FOREVER 系列</span> <span>经典款 </span><span>30分 F色</span></dd>
-						<dd><a href="###" class="collect">收藏</a><a href="###" class="buynow">立即购买</a></dd>
-						<dd>已售:<span class="sell">26792</span>评价: <span class="comment">2710</span></dd>
-					</dl>
-				</li>
-				
-				
+			<ul class="goodslist" id="goodslist">
+								
 			</ul>
 		</div>
 	</div>

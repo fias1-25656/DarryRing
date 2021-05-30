@@ -1,7 +1,20 @@
 
 require(["config"],function(){
-	require(["jquery"],function($){
+	require(["jquery","jquery.ui"],function($){
 		$(function(){
+			/*-----------------------search------------------------*/
+			$("#searchkey").autocomplete({
+				source: function(request,response){
+					window.getsearchKey = function(data){
+						response(data.s);
+					}
+					
+					var _script = document.createElement("script");
+					_script.src = "http://suggestion.baidu.com/su?wd="+request.term+"&cb=getsearchKey";
+					document.body.appendChild(_script);
+				}
+			});
+			
 			/*-----------------------header------------------------*/
 			//扫码效果
 			$app = $(".app");
@@ -89,9 +102,22 @@ require(["config"],function(){
 				}
 			});
 			
-			/*-----------------------sub_nava------------------------*/
-			$quickSort = $(".quick_sort");
-			$quickSort.hover(
+			/*-----------------------nav------------------------*/
+			$nav = $(".nav_list");
+			console.log($nav.children());
+			
+			/*-----------------------sub_nav------------------------*/
+			
+			$(window).scroll(function(){
+				var _top = $(window).scrollTop();
+				if(_top > 200){
+					$(".sub_nav").show();	
+				}else{
+					$(".sub_nav").hide();
+				}
+			});
+			
+			$(".quick_sort").hover(
 				function(){
 					$(this).addClass("hover");
 					$(this).children().first().addClass("hover");
