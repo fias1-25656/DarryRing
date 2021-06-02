@@ -84,7 +84,7 @@
 
 /* ---------------sub_nav---------------- */
 .sub_nav { display: none; position: fixed; width: 50px; height: 617px; background: #DBC7BA; right: 33px; bottom: 2px; text-align: center; z-index: 99; }
-.sub_nav p { display: none; }
+.sub_nav p { display: none; position: absolute; right: 0; top: 0; background: #FFFFFF; text-align: center; width: 50px; padding: 0 10px; line-height: 50px; color: #BC9E8A; }
 .sub_nav p span { color: #FF0000; }
 .sub_nav .server_online { width: 58px; height: 97px; margin-left: -4px; background: #D9B39B; margin-bottom: 50px; }
 .sub_nav .server_online a { display: block; width: 100%; height: 100%; }
@@ -92,7 +92,7 @@
 .sub_nav .server_online em { display: block; width: 4px; height: 4px; margin-bottom: 0; }
 .sub_nav .server_online .ic_left { background: url(../img/same/icon_yleft.png); float: left; }
 .sub_nav .server_online .ic_right { background: url(../img/same/icon_yright.png); float: right; }
-.sub_nav .quick_sort { height: 30px; width: 30px; padding: 10px; margin-bottom: 18px; }
+.sub_nav .quick_sort { height: 30px; width: 30px; padding: 10px; margin-bottom: 18px; position: relative; }
 .sub_nav .quick_sort a { display: block; width: 30px; height: 30px; background: url(../img/same/icon_servie.png) no-repeat; }
 .sub_nav .quick_sort .sort1 { background-position: left -30px; }
 .sub_nav .quick_sort .sort1.hover { background-position: right -30px; }
@@ -106,10 +106,23 @@
 .sub_nav .quick_sort .sort5.hover { background-position: right -150px; }
 .sub_nav .quick_sort .sort6 { background-position: left -180px; }
 .sub_nav .quick_sort .sort6.hover { background-position: right -180px; }
+.sub_nav .quick_sort .ewm { width: 250px; height: 120px; }
 .sub_nav .quick_sort.hover { background: #FFFFFF; }
+.sub_nav .toTop { width: 50px; height: 50px; padding: 0; }
 .sub_nav .toTop a { display: block; width: 50px; height: 50px; background: url(../img/same/totop.jpg) no-repeat; }
 .sub_nav .toTop a:hover { background-position: right top; }
-.sub_nav .share { display: none; }
+.sub_nav .share { height: 30px; width: 200px; padding: 10px 25px; background: #FFFFFF; right: 0; top: 0; text-align: center; }
+.sub_nav .share a { background-image: url(../img/same/ico-shares.png); float: left; margin: 5px; }
+.sub_nav .share .icon1 { background-position: 0px 0; }
+.sub_nav .share .icon1:hover { background-position: 0px -68px; }
+.sub_nav .share .icon2 { background-position: -30px 0; }
+.sub_nav .share .icon2:hover { background-position: -30px -68px; }
+.sub_nav .share .icon3 { background-position: -60px 0; }
+.sub_nav .share .icon3:hover { background-position: -60px -68px; }
+.sub_nav .share .icon4 { background-position: -90px 0; }
+.sub_nav .share .icon4:hover { background-position: -90px -68px; }
+.sub_nav .share .icon5 { background-position: 0 -32px; margin-top: 3px; }
+.sub_nav .share .icon5:hover { background-position: 0 -100px; }
 
 /* ---------------promise---------------- */
 .promise { background: url(../img/same/footer_rp.jpg) repeat-x; overflow: hidden; }
