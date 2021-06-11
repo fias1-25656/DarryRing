@@ -29,8 +29,7 @@ gulp.task("css",function(){
 //处理JS任务
 gulp.task("js",function(){
 	//plug下的所有JS文件压缩并同时合并成一个文件
-	gulp.src("./js/plug/**/*.js").pipe(uglify()).pipe(concat("plug.min.js")).pipe(gulp.dest("./dist/js/plugin"));
-	gulp.src("./dist/pugin/**/*.js").pipe(connect.reload());
+	gulp.src("./js/plug/*.js").pipe(uglify()).pipe(concat("plug.min.js")).pipe(gulp.dest("./dist/js/plugin")).pipe(connect.reload());
 })
 
 //监听任务
