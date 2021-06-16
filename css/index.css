@@ -1,20 +1,3 @@
-.banner { height: 472px; position: relative; }
-.banner .currentPic { display: block; width: 100%; height: 100%; background: url(../img/userfiles/image/smallPic/20160819143418d45968d484.jpg) center; }
-.banner .arrbtn { position: absolute; top: 50%; display: block; width: 60px; height: 60px; background: url(../img/index/ico-bannerBtn.png); }
-.banner .arrLeft { left: 50px; }
-.banner .arrLeft:hover { background-position: left bottom; }
-.banner .arrRight { right: 50px; background-position: right top; }
-.banner .arrRight:hover { background-position: right bottom; }
-.banner span { position: absolute; bottom: 33px; left: 50%; margin-left: -92.5px; display: block; width: 185px; height: 5px; background: url(../img/index/line.png); }
-.banner span a { display: block; width: 30px; height: 30px; border-radius: 50%; position: absolute; }
-.banner span .ban1 { left: -12.5px; top: -12.5px; }
-.banner span .ban2 { left: 23.5px; top: -12.5px; }
-.banner span .ban3 { left: 59.5px; top: -12.5px; }
-.banner span .ban4 { left: 95.5px; top: -12.5px; }
-.banner span .ban5 { left: 131.5px; top: -12.5px; }
-.banner span .ban6 { left: 167.5px; top: -12.5px; }
-.banner span .currentPoint { background: #000000; opacity: 0.2; filter: alpha(opacity=20); }
-
 .quick_enter { margin-top: 10px; background: #dbc7ba; height: 150px; padding: 27px 0; }
 .quick_enter ul { overflow: hidden; height: 130px; width: 985px; padding: 10px; background: #FFFFFF; }
 .quick_enter ul li { float: left; }

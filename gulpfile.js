@@ -28,6 +28,9 @@ gulp.task("css",function(){
 
 //处理JS任务
 gulp.task("js",function(){
+	gulp.src("./js/pagejs/index.js").pipe(uglify()).pipe(rename("index.min.js")).pipe(gulp.dest("./dist/js/pagin"));
+	gulp.src("./js/pagejs/diamond.js").pipe(uglify()).pipe(rename("diamond.min.js")).pipe(gulp.dest("./dist/js/pagin"));
+	gulp.src("./js/pagejs/login.js").pipe(uglify()).pipe(rename("login.min.js")).pipe(gulp.dest("./dist/js/pagin"));
 	//plug下的所有JS文件压缩并同时合并成一个文件
 	gulp.src("./js/plug/*.js").pipe(uglify()).pipe(concat("plug.min.js")).pipe(gulp.dest("./dist/js/plugin")).pipe(connect.reload());
 })

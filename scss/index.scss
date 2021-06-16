@@ -4,28 +4,6 @@
     filter: alpha(opacity=$opacity);
 }
 
-.banner{
-    height: 472px;position: relative;
-    .currentPic{display: block; width: 100%; height: 100%; background: url(../img/userfiles/image/smallPic/20160819143418d45968d484.jpg) center;}
-    
-    .arrbtn{position: absolute; top: 50%; display: block; width: 60px; height: 60px; background: url(../img/index/ico-bannerBtn.png);}
-    
-    $dis : 50px;
-    .arrLeft{left: $dis;}
-    .arrLeft:hover{background-position: left bottom;}
-    .arrRight{right: $dis; background-position: right top;}
-    .arrRight:hover{background-position: right bottom;}
-    
-    span{
-        position: absolute; bottom: 33px; left: 50%; margin-left: -92.5px;
-        display: block; width: 185px; height: 5px; background: url(../img/index/line.png);
-        a{display: block; width: 30px; height: 30px; border-radius: 50%; position: absolute;}
-        @for $i from 1 through 6{
-            .ban#{$i}{left: 36*($i - 1)-12.5px; top:-12.5px;}
-        }
-        .currentPoint{background: #000000; @include opacity(20);}
-    }
-}
 
 .quick_enter{
    margin-top:10px; background: #dbc7ba; height: 150px; padding:27px 0;
